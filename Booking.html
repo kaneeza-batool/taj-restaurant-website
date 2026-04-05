@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taj Restaurant - Booking Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>🍽️ Welcome to Taj Restaurant 🍽️</h1>
+      <p><b>Where taste meets tradition and every meal tells a story!</b></p>
+      <hr />
+      <p>
+        <a href="./index.html">🏠 Home</a> |
+        <a href="./Booking.html">📅 Booking</a> |
+        <a href="./AboutUs.html">ℹ️ About Us</a>
+      </p>
+      <hr />
+    </header>
+
+    <main>
+      <h2>📝 Book Your Table</h2>
+      <form action="">
+        <h3>👤 Customer Information</h3>
+        <label for="fullName">Full Name:</label>
+        <input type="text" placeholder="Enter your name" id="fullName" />
+        <br />
+        <br />
+
+        <label for="email">Email Address:</label>
+        <input type="email" placeholder="example@email.com" id="email" />
+        <br />
+        <br />
+
+        <label for="contact">Phone Number:</label>
+        <input type="tel" placeholder="+92-300-1234567" id="contact" />
+
+        <h3>📅 Booking Details</h3>
+        <label>Booking Type:</label>
+        <br />
+        <input type="radio" id="tablereservation" name="booking_type" />
+        <label for="tablereservation">Table Reservation</label>
+        <br />
+        <input type="radio" id="takeAway" name="booking_type" />
+        <label for="takeAway">Takeaway Order</label>
+        <br />
+        <input type="radio" id="event" name="booking_type" />
+        <label for="event">Party / Event Booking</label>
+        <br />
+        <br />
+        <label for="dateTime">Date and time</label>
+        <input type="datetime-local" id="dateTime" />
+        <br />
+        <br />
+
+        <label for="nuOfGuest">Number of Guests:</label>
+        <input type="number" id="nuOfGuest" />
+
+        <h3>🍴 Food Preferences</h3>
+        <label for="cuisine">Select Cuisine</label>
+        <select id="cuisine">
+          <option value="selectCuisine:" selected disabled>
+            --Select Cuisine--
+          </option>
+          <option value="sindhiTraditional">Sindhi Traditional</option>
+          <option value="pakistani">Pakistani</option>
+          <option value="Chinese">Chinese</option>
+          <option value="fastFood">Fast Food</option>
+        </select>
+        <br />
+        <br />
+
+        <label>Special Dishes (multiple selection allowed):</label>
+        <br />
+        <input type="checkbox" name="dish" id="sindhiBiryani" />
+        <label for="sindhiBiryani">Sindhi Biryani</label>
+        <br />
+        <input type="checkbox" name="dish" id="sindhiKadhai" />
+        <label for="sindhiKadhai">Sindhi Karhai</label>
+        <br />
+        <input type="checkbox" name="dish" id="dalPakwan" />
+        <label for="dalPakwan">Dal Pakwan</label>
+        <br />
+        <input type="checkbox" name="dish" id="fish" />
+        <label for="fish">Fried Machli</label>
+        <br />
+        <input type="checkbox" name="dish" id="gosht" />
+        <label for="gosht">Bhugal Gosht</label>
+
+        <h3>📝 Special Requests</h3>
+        <label for="">Write any special instructions:</label>
+        <br />
+        <textarea
+          placeholder="E.g. Vegetarian food, less spicy, birthday decoration"
+          cols="45"
+          rows="5"
+        ></textarea>
+        <br />
+        <br />
+
+        <h3>💳 Payment Method</h3>
+        <input type="radio" name="Payment" id="cash" />
+        <label for="cash">Cash on Arrival</label>
+        <br />
+        <input type="radio" name="Payment" id="credit" />
+        <label for="credit">Credit/Debit Card</label>
+        <br />
+        <input type="radio" name="Payment" id="online" />
+        <label for="online">Online Payment</label>
+        <br />
+        <br />
+
+        <button type="submit">✅ Confirm Booking</button>
+        <button type="reset">❌ Clear Form</button>
+        <hr />
+      </form>
+    </main>
+
+    <footer>
+      <p style="font-size: small">
+        All Rights are reserved by Taj Restaurant | This site is developed by
+        <a href="#">Kaneeza Batool</a>
+      </p>
+    </footer>
+  </body>
+</html>
