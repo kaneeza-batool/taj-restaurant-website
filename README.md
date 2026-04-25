@@ -1,2 +1,2 @@
 # taj-restaurant-website
-A simple restaurant website built with HTML showcasing menu, booking form, and about page.
+Restaurant website with menu, booking form, and multi-section layout built with HTML only
